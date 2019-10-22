@@ -3,7 +3,7 @@
 PUBLIC_KEY_PATH="${HOME}/.ssh/id_rsa.pub"
 
 if [ ! -f "$PUBLIC_KEY_PATH" ]; then
-  echo "Cannot find a public key at ${PUBLIC_KEY_PATH}." 2>/dev/null
+  echo "Cannot find a public key at ${PUBLIC_KEY_PATH}." 2>&1
   exit 1
 fi
 
